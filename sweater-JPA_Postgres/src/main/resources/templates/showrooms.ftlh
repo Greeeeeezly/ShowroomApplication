@@ -27,6 +27,7 @@
         <th>ID сотрудников</th>
     </tr>
     <#list showrooms?sort_by("showroomId") as showroom>
+        <#list showroom.employees as employee>
         <tr>
             <td>${showroom.showroomId}</td>
             <td>${showroom.address}</td>
@@ -35,9 +36,8 @@
             <td>${showroom.email}</td>
             <td>${showroom.phone}</td>
             <td>
-                <#list showroom.employees as employee>
+
                     ${employee.id}
-                </#list>
             </td>
             <td>
                 <button onclick="toggleEditForm('${showroom.showroomId}')">Изменить</button>
@@ -56,6 +56,8 @@
                 </form>
             </td>
         </tr>
+        </#list>
+
     </#list>
 </table>
 <div>Удаление автосалона</div>

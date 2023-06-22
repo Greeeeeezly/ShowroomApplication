@@ -3,7 +3,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 <body>
-<div>Поиск по id продажи</div>
+<div>Поиск продаж по id автосалона</div>
 <form method="post" action="filter">
     <input type="number" name="id">
     <button type="submit">Найти</button>

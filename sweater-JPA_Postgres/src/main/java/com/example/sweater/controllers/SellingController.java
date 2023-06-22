@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
 @Controller
 public class SellingController {
@@ -31,7 +32,7 @@ public class SellingController {
         sellings = sellingRepo.findAll();
         if (!(id == null)) {
             for (Selling selling : sellings) {
-                currentId = selling.getId();
+                currentId = selling.getShowroom().getShowroomId();
                 if (currentId.equals(id)) {
                     sellingsById.add(selling);
                 }
