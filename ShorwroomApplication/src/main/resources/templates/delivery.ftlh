@@ -29,7 +29,8 @@
                 ${car.brand}
                 ${car.model}
             </#list>
-        </td>        </#list>
+        </td>
+        </#list>
 </table>
 <a href="main">Главная страница</a>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
